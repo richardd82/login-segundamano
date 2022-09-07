@@ -1,0 +1,77 @@
+.containerLogin {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: 40vh;
+	margin: auto;
+	margin-top: 0%;
+	
+}
+.btnClose {
+	display: inline;
+	position: fixed;
+	right: 31%;
+	width: 10%;
+	margin: auto;
+	float: right;
+	color: gray;
+	font-size: xx-large;
+	align-items: flex-end;
+	justify-content: center;
+    cursor: pointer;
+}
+.formLogin {
+	display: contents;	
+}
+.titleLogin {
+	margin-bottom: 9%;
+	margin-top: -5%;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+.formContainer {
+	display: flex;
+	height: inherit;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;	
+}
+.user input {
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.password input {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.btnSubmit {
+	margin-top: 15px;
+	color: aliceblue;
+	font-family: 'Poppins';
+	font-weight: 300;
+    border: 0px;
+	border-radius: 2px;
+	background: var(--color-btns);
+	padding: 8px;
+    cursor: pointer;
+	box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+	-webkit-box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+	-moz-box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+}
+.newAccount{
+	cursor: pointer;
+	color: blue;
+}
+.footerLogin{
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 13px;
+    margin-top: -50px;
+}

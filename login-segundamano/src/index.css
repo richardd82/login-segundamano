@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-family: -apple-system, "Poppins";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input {
+	outline: none;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+.dangerLogin {
+	margin-top: -8%;
+	color: #c65656;
+	font-size: 13px;
+}
+.dangerPswd {
+	margin-top: -5%;
+	color: #c65656;
+	font-size: 13px;
+}
+.danger {
+	margin-top: -5%;
+	color: #c65656;
+	font-size: 13px;
+}
+:root {
+	--color-primary: #18b9b4;
+	--color-btns: #d94647;
+}
+::placeholder {
+	font-family: "Poppins";
+}
+.btnsHome {
+	margin: auto;
+	color: aliceblue;
+	width: 100px;
+	margin-top: 15px;
+	border: 0px;
+	border-radius: 2px;
+	background: var(--color-btns);
+	padding: 8px;
+	cursor: pointer;
+	box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+	-webkit-box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+	-moz-box-shadow: 0px 5px 4px -2px rgba(145, 137, 137, 0.75);
+}
