@@ -49,6 +49,14 @@
 	border: 1px solid gray;
 	border-radius: 3px;
 }
+.showPwd{
+	position: absolute;
+	cursor: pointer;
+	top: 57%;
+    right: 6rem;
+	font-size: small;
+	color: blue;
+}
 .btnSubmit {
 	margin-top: 15px;
 	color: aliceblue;

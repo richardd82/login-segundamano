@@ -13,7 +13,7 @@ const Login = () => {
 	// const [isOpenModalLogin, openModalLogin, closeModalLogin] = useModal(false)
     // const [isOpenModalRegister, openModalRegister, closeModalRegister] = useModal(false)
 	const [errors, setErrors] = useState({});
-	
+	const [showPwd, setShowPwd] = useState(false);
 	const handleInputChange = (e) => {
 		setInput({
 			...input,
@@ -64,13 +64,18 @@ const Login = () => {
 					<div className="password">
 						<input
 							className={errors.password && "dangerPswd"}
-							type="password"
+							type={showPwd ? "text" : "password"}
 							name="password"
 							onChange={handleInputChange}
 							value={input.password}
 							placeholder="Type Password"
 							required
 						/>
+						<div className="showPwd" onClick={() => setShowPwd(!showPwd)}>
+							{showPwd ? <span>Ocultar</span> : <span>Mostrar</span>} 
+						</div>
+						
+						
 						{errors.password && <p className="dangerPswd">{errors.password}</p>}
 					</div>
 					<button className="btnSubmit" type="submit">
