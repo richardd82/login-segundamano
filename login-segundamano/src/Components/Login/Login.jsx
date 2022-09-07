@@ -5,7 +5,7 @@ import { validate } from "../../Controllers/ValidateLogin.js";
 import "./login.css";
 
 
-const Login = () => {
+const Login = ({setLogin}) => {
 	const [input, setInput] = useState({
 		username: "",
 		password: "",
@@ -84,7 +84,10 @@ const Login = () => {
 				</form>
 			</div>
 			<div className="footerLogin">
-				¿No tienes cuenta?<span className='newAccount' >Crea una nueva</span>
+				¿No tienes cuenta?<span onClick={(e)=>{
+					e.preventDefault
+					setLogin(false)
+				}} className='newAccount' >Crea una nueva</span>
 			</div>
 		</div>
 	);
