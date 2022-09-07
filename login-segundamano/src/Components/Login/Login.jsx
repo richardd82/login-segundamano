@@ -85,7 +85,7 @@ const Login = ({setLogin}) => {
 			</div>
 			<div className="footerLogin">
 				¿No tienes cuenta?<span onClick={(e)=>{
-					e.preventDefault
+					e.preventDefault()
 					setLogin(false)
 				}} className='newAccount' >Crea una nueva</span>
 			</div>

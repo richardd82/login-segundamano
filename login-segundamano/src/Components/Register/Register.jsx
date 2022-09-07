@@ -3,7 +3,7 @@ import { validate } from "../../Controllers/ValidateRegister.js";
 import { users } from "../../data.js";
 import './register.css'
 
-const Register = () => {
+const Register = ({setLogin}) => {
 	const [input, setInput] = useState({
 		username: "",
 		password: "",
@@ -91,7 +91,10 @@ const Register = () => {
 				</form>
 			</div>
 			<div className="footerLogin">
-				¿Ya tienes cuenta? <span className="newAccount">Inicia sesión</span>
+				¿Ya tienes cuenta? <span onClick={(e)=>{
+					e.preventDefault()
+					setLogin(true)
+				}} className='newAccount' >Inicia sesión</span>
 			</div>
 		</div>
 	);

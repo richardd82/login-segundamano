@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Modal from "./Modal/Modal";
@@ -18,7 +18,7 @@ const Modals = () => {
             </Modal>
             <button className="btnsHome" onClick={openModalRegister}>Register</button>
             <Modal isOpen={isOpenModalRegister} closeModal={closeModalRegister}>
-                <Register />
+            {login ? <Login setLogin={setLogin}/> : <Register setLogin={setLogin} />}
             </Modal>
 		</div>
 	);
