@@ -1,29 +1,35 @@
-.modal{
+.modal {
     position: fixed;
     z-index: 999;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75); 
+    background-color: rgba(0, 0, 0, 0.75);
     display: none;
     justify-content: center;
     align-items: center;
 }
 
-.modal.is-open{
+.modal.is-open {
     display: flex;
 }
-.modalContainer{
+
+.modalContainer {
     position: relative;
     min-width: 480px;
     max-width: 600px;
     min-height: 200px;
-    max-height: 350px;
+    max-height: 372px;
     overflow-y: hidden;
     background-color: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.77);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.77);
 }
-.modalClose{
+
+.modalClose {
     position: absolute;
     top: 1rem;
     right: 1rem;
