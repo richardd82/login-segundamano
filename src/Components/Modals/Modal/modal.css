@@ -20,7 +20,7 @@
     max-width: 600px;
     min-height: 200px;
     max-height: 350px;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: #fff;
 }
 .modalClose{
