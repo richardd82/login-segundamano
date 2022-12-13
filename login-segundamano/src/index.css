@@ -3,10 +3,6 @@
 	src: url('Assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
-	font-family: 'Square_Peg';
-	src: url('assets/fonts/Square_Peg/SquarePeg-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
   }
 body {
 	margin: 0;
